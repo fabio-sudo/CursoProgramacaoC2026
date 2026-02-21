@@ -4,13 +4,17 @@
     {
         public void ValorPar()
         {
-            int numero = 4;
-            int resultado = 0;
+            Console.WriteLine("Informe um valor:");
 
-            resultado = numero % 2;
+            int numero = int.Parse(Console.ReadLine());
 
-            Console.WriteLine(resultado);
-
+            if (numero % 2 == 0)
+            {
+                Console.WriteLine("PAR");
+            }
+            else {
+                Console.WriteLine("IMPAR");
+            }
         }
     }
 }
